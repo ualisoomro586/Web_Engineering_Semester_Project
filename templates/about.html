@@ -1,0 +1,82 @@
+{% extends 'index.html' %}
+
+{% block title %}About Us{% endblock %}
+{% block content %}
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<!-- Template Style sheet -->
+<link href="/static/assets/css/style.css" rel="stylesheet">
+
+<style>
+    /* Custom CSS for team members */
+    .team-container {
+        text-align: center;
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+    }
+
+    .team-member img {
+        border-radius: 50%;
+        width: 100px; /* Adjust image size as needed */
+        height: 100px; /* Adjust image size as needed */
+        margin-bottom: 10px;
+    }
+
+    .team-name {
+        margin-bottom: 5px;
+    }
+
+    .team-designation {
+        font-weight: bold;
+    }
+
+    .column {
+        flex-basis: 25%; /* Adjust width for each team member */
+        padding: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="section-title">
+        <h1 align='center'>Team</h1>
+    </div>
+    <div class="team-container">
+        <div class="row">
+            <div class="column">
+                <div class="team-member">
+                    <img src="static/profile.jpg" alt="Usman">
+                    <div class="team-name">Muhammad Usman</div>
+                    <div class="team-designation">20SW041</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="team-member">
+                    <img src="static/profile.jpg" alt="Usama">
+                    <div class="team-name">Muhammad Usama</div>
+                    <div class="team-designation">20SW001</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="team-member">
+                    <img src="static/profile.jpg" alt="Adarsh">
+                    <div class="team-name">Adarsh Kumar</div>
+                    <div class="team-designation">20SW117</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="team-member">
+                    <img src="static/profile.jpg" alt="Yaseen">
+                    <div class="team-name">Ghulam Yaseen</div>
+                    <div class="team-designation">20SW077</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
